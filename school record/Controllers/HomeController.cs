@@ -10,10 +10,15 @@ namespace school_record.Controllers
     public class HomeController : Controller
     {
         // GET:
-        // 3.1.1 version h
+        // 3.1.1 
         StudentRepository context = new StudentRepository();
         
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
         {
             return View();
         }
@@ -67,6 +72,7 @@ namespace school_record.Controllers
             ed.Rollno = stu.Rollno;          
             ed.MobileNo = stu.MobileNo;
             ed.Name = stu.Name;
+           
             context.Commit();
             return RedirectToAction("Detail");
         }

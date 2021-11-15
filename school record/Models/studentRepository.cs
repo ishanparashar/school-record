@@ -53,7 +53,7 @@ namespace school_record.Models
 
         public void update(stumodel st)
         {
-            stumodel stuupdate = sb.Find(Id);
+            stumodel stuupdate = Find(st.Id);
             if(stuupdate!=null)
             {
 

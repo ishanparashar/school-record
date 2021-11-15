@@ -23,7 +23,7 @@ namespace school_record
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap-new.css",
+                      "~/Content/bootstrap.css",
                       "~/Content/site.css"));
         }
     }
