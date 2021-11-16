@@ -72,6 +72,7 @@ namespace school_record.Controllers
             ed.Rollno = stu.Rollno;          
             ed.MobileNo = stu.MobileNo;
             ed.Name = stu.Name;
+            ed.Father_name = stu.Father_name;
            
             context.Commit();
             return RedirectToAction("Detail");

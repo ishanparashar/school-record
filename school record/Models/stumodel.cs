@@ -13,7 +13,8 @@ namespace school_record.Models
           [Key]
         public String Id { get; set; }
 
-        
+        [Required(ErrorMessage = "Name Require")]
+        public String Father_name { get; set; }
         public int Rollno { get; set; }
 
         [Required(ErrorMessage = "Name Require")]

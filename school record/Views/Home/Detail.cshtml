@@ -1,4 +1,4 @@
-﻿ @model IEnumerable<school_record.Models.stumodel>
+﻿@model IEnumerable<school_record.Models.stumodel>
 
 @{
     ViewBag.Title = "Detail";
@@ -11,6 +11,9 @@
 </p>
 <table class="table">
     <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Father_name)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.Rollno)
         </th>
@@ -25,6 +28,9 @@
 
 @foreach (var item in Model) {
     <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Father_name)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Rollno)
         </td>
